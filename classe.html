@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques | UNCHK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="barre-laterale">
+
+        <div class="logo">
+            <div class="icone-logo">🎓</div>
+            <div>
+                <strong>UNCHK</strong>
+                <span>Administration</span>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html" class="lien-menu">
+                <span>📉</span>
+                Tableau de bord
+            </a>
+            <a href="ajout.html" class="lien-menu">
+                <span>➕</span>
+                Ajouter étudiant
+            </a>
+            <a href="liste.html" class="lien-menu">
+                <span>👨‍🎓</span>
+                Étudiants
+            </a>
+            <a href="classe.html" class="lien-menu actif" aria-current="page">
+                <span>📊</span>
+                Statistiques
+            </a>
+            <a href="https://telly-tech.com/" class="lien-menu">
+                <span>🌐</span>
+                Telly Tech
+            </a>
+        </nav>
+         <div class="bas-barre">
+            <p>Gestion des étudiants</p>
+            <small>© 2026 UNCHK</small>
+        </div>
+
+    </aside>
+    <div class="contenu-principal">
+
+
+        <header class="en-tete">
+
+            <div>
+                <span class="etiquette-page">ESPACE ADMINISTRATION</span>
+
+                <h1>Gestion des étudiants</h1>
+
+                <p>
+                    Gérez les inscriptions et suivez les résultats des étudiants.
+                </p>
+            </div>
+
+            <div class="profil">
+                <div class="icone-profil">👩🏽‍💻</div>
+
+                <div>
+                    <strong>Administrateur</strong>
+                    <span>UNCHK</span>
+                </div>
+            </div>
+        </header>
+        <main class="conteneur">
+            <section class="carte-statistique">
+                <h3>Meilleur étudiant</h3>
+                <p id="meilleur-etudiant">--</p>
+                <h3>Taux de réussite</h3>
+                <p id="taux-reussite">0%</p>
+                <canvas id="graphique-etudiants"></canvas>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+</body>
+</html>
